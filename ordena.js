@@ -12,14 +12,14 @@ function leerArchivo(e) {
     console.log(archivos);
 
     for (var j=0,f; f = archivos[j] ; j++) {
-        console.log(f);
+        //console.log(f);
         var lector = new FileReader();
 
         lector.onload = (function(theFile) {
             return function(e){
                 let srt='';
                 let fila=[];
-                console.log(e.target.result);
+                //console.log(e.target.result);
                 srt=(e.target.result).toString();
                 srt=srt.replace('MassCon  ug/m\r\n2.5um:', '');
                 srt=srt.replace('10 um:', '');
@@ -50,13 +50,15 @@ function leerArchivo(e) {
                 vals.push(fila);
                 datos.push([fila[0],parseInt(fila[1]),parseInt(fila[2])]);
                 
-                console.log(datos);
-                console.log(vals);
+                //console.log(datos);
+                //console.log(vals);
             }
         })(f);
         lector.readAsText(f);
     }//for
-    //google.charts.setOnLoadCallback(drawChart);
+    console.log("DATOS RECIEN PROCESADOS##########################################");
+    console.log(datos);
+    google.charts.setOnLoadCallback(drawChart);
 }
 
 document.getElementById('file-input')

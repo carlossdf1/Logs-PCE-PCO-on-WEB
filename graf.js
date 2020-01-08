@@ -1,9 +1,10 @@
 google.charts.load('current', {'packages':['corechart']});
-google.charts.setOnLoadCallback(drawChart);
+//google.charts.setOnLoadCallback(drawChart);
 
 function drawChart() {
-
-//  var data = google.visualization.arrayToDataTable(datos);
+  console.log("DIBUJADO#####################################");
+  console.log(datos);
+  var data = google.visualization.arrayToDataTable(datos);
 
 //var data = google.visualization.arrayToDataTable([
 //    ['Year', 'Sales', 'Expenses'],
@@ -14,15 +15,15 @@ function drawChart() {
 //  ]);
 
 
-var data = google.visualization.arrayToDataTable([
-  ["date time","2.5um","10 um"],
-  ["11-23-2019 20-36-02",18,41],
-  ["11-23-2019 20-35-21",29,53],
-  ["11-23-2019 20-34-54",25,50],
-  ["11-23-2019 20-34-27",35,51],
-  ["11-23-2019 20-33-50",25,43],
-  ["11-23-2019 20-33-19",20,47]
-]);
+//var data = google.visualization.arrayToDataTable([
+//  ["date time","2.5um","10 um"],
+//  ["11-23-2019 20-36-02",18,41],
+//  ["11-23-2019 20-35-21",29,53],
+//  ["11-23-2019 20-34-54",25,50],
+//  ["11-23-2019 20-34-27",35,51],
+//  ["11-23-2019 20-33-50",25,43],
+//  ["11-23-2019 20-33-19",20,47]
+//]);
 
 
   var options = {
