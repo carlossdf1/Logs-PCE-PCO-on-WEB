@@ -1,0 +1,5 @@
+MassCon  ug/m
+2.5um:     19
+10 um:     51
+AT:   17.7  RH:   49.7  
+DP:    7.9  WB:   13.0  
